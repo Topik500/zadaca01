@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import sum_operation from './sum_operation';
+import { subtraction, multiplication, division } from './other_operactions';
 
 function App() {
   return (
@@ -21,5 +23,13 @@ function App() {
     </div>
   );
 }
+const x = 10;
+const y = 5;
+
+console.log('Osnovne operacije sa zadanim brojevima:')
+console.log(sum_operation(x,y));
+console.log(subtraction(x,y));
+console.log(multiplication(x,y));
+console.log(division(x,y));
 
 export default App;
